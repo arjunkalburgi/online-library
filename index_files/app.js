@@ -18,11 +18,9 @@ $(document).ready(function () {
 var bookwidth = 400, bookheight = 200;
 for (var i = 0; i < total; i++) {
     var book = books[i];
-    TweenLite.set(book, {
-        x: book_x,
-        y: R(0, h - bookheight)
-    });
+    TweenLite.set(book, { x: book_x, y: R(0, h - bookheight) });
     book_x += bookwidth + 50;
+    book.attr("startX", book_x)
 }
 
 // on hover
