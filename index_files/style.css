@@ -340,27 +340,20 @@ a:link {
     right: 0;
     width: 26px;
     height: 26px;
-    overflow: hidden
+    overflow: hidden; 
+    font-size: small; 
 }
 
 .sd--works__ico:before {
-    content: '';
     display: block;
-    width: 5px;
-    height: 5px;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #fff;
-    opacity: 0;
+    width: 15px;
+    height: 15px;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-    -webkit-transition: opacity .6s;
-    transition: opacity .6s;
-    z-index: 10
 }
 
 .sd--works__ico__arr {
