@@ -19,8 +19,8 @@ var bookwidth = 400, bookheight = 200;
 for (var i = 0; i < total; i++) {
     var book = books[i];
     TweenLite.set(book, { x: book_x, y: R(0, h - bookheight) });
+    // book.setAttribute("data-startX", book_x)
     book_x += bookwidth + 50;
-    book.attr("startX", book_x)
 }
 
 // on hover
@@ -40,7 +40,14 @@ books.hover(function () {
 $(document).on("mousemove", function (e) {
     var percentMM = (mouse_x - e.pageX) / mouse_offset * 100;
     $(".books li").each(function () {
-        TweenMax.to($(this), 1, { x: "+=" + percentMM * R(10, 30) });
+        // TweenMax.to($(this), 1, {
+        //     x: {
+        //         value: '+=' + percentMM * R(10, 30),
+        //         min: parseInt($(this).attr("data-startX")) - 200,
+        //         max: parseInt($(this).attr("data-startX")) + 200
+        //     }
+        // })
+        TweenMax.to($(this), 1, { x: "+=" + percentMM * R(10, 20) });
     });
     mouse_x = e.pageX;
 });

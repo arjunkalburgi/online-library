@@ -483,7 +483,7 @@ a:link {
 
 @media screen and (min-width: 48em) {
     .b--wrap {
-        width: 50%;
+        width: 60%;
         margin: 0 0 0 auto
     }
 
@@ -496,7 +496,7 @@ a:link {
     }
 
     .sd--con {
-        width: 50%
+        width: 40%
     }
 }
 
