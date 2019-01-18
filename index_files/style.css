@@ -58,32 +58,14 @@ a {
     outline: none
 }
 
-@font-face {
-    font-family: "YakuHanJP";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/YakuHanJP-DemiLight.eot");
-    src: url("../fonts/YakuHanJP-DemiLight.woff2") format("woff2"), url("../fonts/YakuHanJP-DemiLight.woff") format("woff");
-    font-display: swap
-}
-
-@font-face {
-    font-family: "omote";
-    src: url("../fonts/icons.eot");
-    src: url("../fonts/icons.eot?#iefix") format("eot"), url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap
-}
-
 .f--ftb {
     font-family: "futura-pt", sans-serif;
-    font-weight: 400
+    font-weight: 200
 }
 
 [class*=" i--"]:before {
     display: inline-block;
-    font-family: "omote";
+    font-family: "Raleway-Light";
     font-style: normal;
     font-weight: normal;
     line-height: 1;
@@ -143,13 +125,12 @@ html {
 }
 
 body {
-    font-family: YakuHanJP, "a-otf-gothic-bbb-pr6n", 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', Meiryo, 'メイリオ', Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+    font-family: Raleway-Light, "a-otf-gothic-bbb-pr6n", 'Hiragino Sans', 'Raleway', 'Hiragino Kaku Gothic ProN', Meiryo, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
     overflow: hidden;
     -webkit-text-size-adjust: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent
 }
 
 .pc body ::-webkit-scrollbar-thumb:vertical {
@@ -446,7 +427,7 @@ a:link {
     height: 6px;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #f00;
+    background: #12A962;
     position: absolute;
     position: absolute;
     top: 0;
